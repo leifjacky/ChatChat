@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.leif.chatchat.ui.SettingActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/activity_setting_btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/activity_setting_text_setting"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/activity_setting_btn_logoff"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/exit"
+            android:visibility="visible"/>
+    </TableRow>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/activity_setting_avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.leif.chatchat.ui.view.RoundedImageView
+            android:id="@+id/activity_setting_avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            app:border_color="@android:color/primary_text_dark"
+            app:border_width="2dp"
+            app:corner_radius="90dp"
+            app:oval="false" />
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/activity_setting_text_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_setting_text_nickname"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/activity_setting_btn_nickname"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/activity_sign_text_account" />
+
+            <TextView
+                android:id="@+id/activity_setting_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_sign_hint_account"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/activity_sign_text_password" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/activity_setting_text_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567890"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/activity_setting_btn_password"
+                android:layout_marginLeft="10dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit"/>
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

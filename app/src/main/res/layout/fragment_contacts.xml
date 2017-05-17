@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leif.chatchat.ui.fragment.ContactFragment">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_contacts_list_layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/fragment_contacts_list_btn_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:drawableLeft="@drawable/contact"
+                android:text="@string/fragment_contacts_list_text_new"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/fragment_new_friend_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="38dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

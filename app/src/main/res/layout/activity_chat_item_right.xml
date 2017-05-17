@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_chat_item_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/activity_chat_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="10:00" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="right|clip_vertical|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_right_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_chat_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/activity_chat_item_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.leif.chatchat.ui.view.RoundedImageView
+                android:id="@+id/activity_chat_item_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher"
+                app:border_color="@android:color/holo_green_dark"
+                app:border_width="1dp"
+                app:corner_radius="90dp"
+                app:oval="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

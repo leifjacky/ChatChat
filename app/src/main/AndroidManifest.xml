@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leif.chatchat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".IM"
+        android:allowBackup="true"
+        android:icon="@drawable/sms"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.SignActivity" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.AddContactActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.AddShareActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.NewFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <service
+            android:name=".IMService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.leif.chatchat.IMService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".provider.ContactsProvider"
+            android:authorities="com.leif.chatchat.provider.ContactsProvider" />
+        <provider
+            android:name=".provider.ShareProvider"
+            android:authorities="com.leif.chatchat.provider.ShareProvider" />
+        <provider
+            android:name=".provider.NewFriendProvider"
+            android:authorities="com.leif.chatchat.provider.NewFriendProvider" />
+        <provider
+            android:name=".provider.SMSProvider"
+            android:authorities="com.leif.chatchat.provider.SMSProvider" />
+
+    </application>
+
+</manifest>

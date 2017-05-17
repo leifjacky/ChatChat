@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="eb11e05264a8ed87259998bab1d865df8380202f">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_7377148bd9bce958d056cbe54b26e51c21649620.jar" />
+    </item>
+    <item
+        jar="/Users/leif/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_e2afb7918524ba115099955c4f5a92bd62b2d527.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_4de43ee3faffa95077525e9f3e65f1868d2725c8.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_770316aa2fbd5df18a639bd20e18ced3a8406945.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d68739392d944bd533b2060879091af89e804f7e">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/instant-run_66e9c448191b94051a9c7491ab432079298491b0.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_e908b49b244ecfb56fbd91256cba8dd31c36a54d.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_b3f091f35123926c2b473790d2f8afce6165af2c.jar" />
+    </item>
+    <item
+        jar="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/leif/AndroidStudioProjects/ChatChat/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_0df6fb247c60bcaf64312277513044a068fd4a0a.jar" />
+    </item>
+
+</items>

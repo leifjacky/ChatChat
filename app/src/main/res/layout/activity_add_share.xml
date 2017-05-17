@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.leif.chatchat.ui.SignActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/activity_add_share_btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/activity_add_share_text_share"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/activity_add_share_btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/check" />
+    </TableRow>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/activity_add_share_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/activity_add_share_hint_share"
+        android:gravity="top"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_add_share_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/activity_add_share_select_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/photo"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="@string/activity_add_share_text_photo"/>
+    </LinearLayout>
+</LinearLayout>

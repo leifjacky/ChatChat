@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.Dialog.NicknameDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/dialog_nickname_btn_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/dialog_nickname_text_settingNickname"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/dialog_nickname_btn_check"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/check" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="@string/dialog_nickname_text_nickname" />
+
+            <EditText
+                android:id="@+id/dialog_nickname_text_nickname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/dialog_nickname_hint_nickname"
+                android:maxLines="1"
+                android:textSize="15dp" />
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

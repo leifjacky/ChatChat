@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/activity_login_text_login"
+        android:textColor="@android:color/black"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/activity_sign_text_account" />
+
+            <EditText
+                android:id="@+id/activity_login_input_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_login_input_account"
+                android:maxLines="1"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/activity_sign_text_password" />
+
+            <EditText
+                android:id="@+id/activity_login_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/activity_login_input_passowrd"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/activity_login_chkbox_remember_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_login_text_remember_pass" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/activity_login_btn_login"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:text="@string/activity_login_btn_login" />
+
+            <Button
+                android:id="@+id/activity_login_btn_register"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text="@string/activity_login_btn_register" />
+        </TableRow>
+
+    </LinearLayout>
+</LinearLayout>
